@@ -116,10 +116,12 @@ fi
 [ -s "/home/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/home/abhshkdz/.scm_breeze/scm_breeze.sh"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$HOME/.rvm/gems/ruby-1.9.3-p327/bin:$PATH # Add gems to PATH
 
 if [ "$BASH_VERSION" ] && [ -n "$PS1" ] && echo $SHELLOPTS | grep -v posix >>/dev/null; then
     . /usr/share/autojump/autojump.bash
 elif [ "$ZSH_VERSION" ] && [ -n "$PS1" ]; then
     . /usr/share/autojump/autojump.zsh
 fi
+
 alias llama='ssh git@git.sdslabs.co.in llama'
