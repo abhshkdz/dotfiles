@@ -65,11 +65,25 @@ d() {
 }
 
 #boom
-alias 'b'='boom'
-bd() {
-    EXT=${1: -4}
-    axel "$1" -o "/home/abhshkdz/Dropbox/Public/boom/$2$EXT"
-    URL=`dropbox puburl "/home/abhshkdz/Dropbox/Public/boom/$2$EXT"`
-    boom pics $2 $URL
-    boom $2
+alias 'B'='boom'
+b() {
+    case "$1" in
+        pics|p)
+            EXT=${2: -4}
+            axel "$2" -o "/home/abhshkdz/Dropbox/Public/boom/$3$EXT"
+            URL=`dropbox puburl "/home/abhshkdz/Dropbox/Public/boom/$3$EXT"`
+            boom pics $3 $URL
+            boom $3
+            ;;
+        memes|m)
+            EXT=${2: -4}
+            axel "$2" -o "/home/abhshkdz/Dropbox/Public/memes/$3$EXT"
+            URL=`dropbox puburl "/home/abhshkdz/Dropbox/Public/memes/$3$EXT"`
+            boom memes $3 $URL
+            boom $3
+            ;;
+        *)
+            boom
+            ;;
+    esac
 }
