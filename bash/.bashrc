@@ -125,3 +125,9 @@ elif [ "$ZSH_VERSION" ] && [ -n "$PS1" ]; then
 fi
 
 alias llama='ssh git@git.sdslabs.co.in llama'
+
+source $HOME/.nvm/nvm.sh
+export PATH=$HOME/Applications/sbt/bin:$PATH
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

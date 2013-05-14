@@ -1,9 +1,3 @@
-#cd + ls
-lcd() { 
-    cd "$@" && ls 
-}
-alias 'cd'='lcd'
-
 #cloning from sdslabs git
 sds_git() { 
     git clone git@git.sdslabs.co.in:"$1" 
