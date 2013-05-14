@@ -1,0 +1,13 @@
+{
+	"files":
+	{
+		"jquery": "http://code.jquery.com/jquery.min.js",
+		"normalize": "http://necolas.github.com/normalize.css/2.0.1/normalize.css",
+		"prefixfree": "https://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"
+	},
+	"packages":
+	{
+		"html5_boilerplate": "https://github.com/h5bp/html5-boilerplate/zipball/master",
+		"toro": "https://github.com/anandkunal/ToroPHP/zipball/master"
+	}
+}

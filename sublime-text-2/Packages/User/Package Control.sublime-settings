@@ -1,0 +1,21 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"AngularJS",
+		"Dictionaries",
+		"Git",
+		"HTML Snippets",
+		"jQuery",
+		"Markdown Preview",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"Prefixr",
+		"SCSS",
+		"SFTP",
+		"SmartMarkdown",
+		"Specificity Calculator",
+		"SublimeLinter",
+		"Super Calculator"
+	]
+}

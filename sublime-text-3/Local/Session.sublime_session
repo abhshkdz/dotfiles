@@ -1,0 +1,490 @@
+{
+	"folder_history":
+	[
+		"/home/abhshkdz/projects/sdslabs/Slim-MVC",
+		"/home/abhshkdz/projects/sdslabs/api-v2",
+		"/home/abhshkdz/projects/personal/razorpay",
+		"/home/abhshkdz/projects/sdslabs/presence",
+		"/home/abhshkdz/projects/sdslabs/api"
+	],
+	"last_version": 3033,
+	"last_window_id": 6,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 480.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 59.0,
+				"selected_items":
+				[
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"private",
+						"Gist: Create Private Gist"
+					],
+					[
+						"priva",
+						"Gist: Create Private Gist"
+					],
+					[
+						"privat",
+						"Gist: Create Private Gist"
+					],
+					[
+						"publi",
+						"Gist: Create Public Gist"
+					],
+					[
+						"doc",
+						"DocBlockr: Reparse comment block"
+					],
+					[
+						"dock",
+						"DocBlockr: Reparse comment block"
+					],
+					[
+						"docblockr",
+						"DocBlockr: Decorate line comment"
+					]
+				],
+				"width": 417.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/abhshkdz/projects/sdslabs/api-v2/public/index.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/config/developer.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/config/example.developer.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/composer.json",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/SessionCookie.php",
+				"/home/abhshkdz/projects/personal/razorpay/application/models/merchant.php",
+				"/home/abhshkdz/projects/personal/razorpay/application/controllers/account.php",
+				"/home/abhshkdz/projects/personal/razorpay/application/routes.php",
+				"/home/abhshkdz/projects/sdslabs/presence/app/bootstrap.php",
+				"/home/abhshkdz/projects/sdslabs/presence/config.cfg",
+				"/home/abhshkdz/projects/sdslabs/presence/app/user_class.php",
+				"/home/abhshkdz/projects/sdslabs/presence/sensors/lan.sh",
+				"/home/abhshkdz/projects/sdslabs/presence/app/controller/submit.php",
+				"/home/abhshkdz/projects/sdslabs/presence/app/controller/home.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/JSON.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/JSONP.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/jsonp.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/json.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/config/config.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/composer.lock",
+				"/home/abhshkdz/projects/sdslabs/api-v2/middleware/jsonp.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/middleware/json.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/Flash.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/ContentTypes.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/autoload.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/composer/autoload_real.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/composer/installed.json",
+				"/home/abhshkdz/projects/sdslabs/api-v2/api.sdslabs.local",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/Phpcs/Default (Linux).sublime-keymap",
+				"/home/abhshkdz/projects/sdslabs/api-v2/public/test.php",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/Phpcs/phpcs.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/DocBlockr/Base File.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/abhshkdz/projects/sdslabs/filepanda/config/developer.php",
+				"/home/abhshkdz/projects/personal/core/includes/parser/Parser.php",
+				"/home/abhshkdz/projects/personal/razorpay/application/config/application.php",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/Gist/Gist.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/Gist.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/phpcs.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+				"/usr/share/applications/sublime_text.desktop",
+				"/usr/share/applications/sublime.desktop"
+			],
+			"find":
+			{
+				"height": 33.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"AllCapsMiddleware",
+					"tab",
+					"MYSQL"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 23.0
+			},
+			"input":
+			{
+				"height": 32.0
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 42.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 303.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 640.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 105.0,
+				"selected_items":
+				[
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"private",
+						"Gist: Create Private Gist"
+					],
+					[
+						"priva",
+						"Gist: Create Private Gist"
+					],
+					[
+						"privat",
+						"Gist: Create Private Gist"
+					],
+					[
+						"publi",
+						"Gist: Create Public Gist"
+					],
+					[
+						"doc",
+						"DocBlockr: Reparse comment block"
+					],
+					[
+						"dock",
+						"DocBlockr: Reparse comment block"
+					],
+					[
+						"docblockr",
+						"DocBlockr: Decorate line comment"
+					]
+				],
+				"width": 543.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/abhshkdz/projects/sdslabs/api-v2/app/templates/form.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/app/templates/form2.html",
+				"/home/abhshkdz/projects/sdslabs/api-v2/app/index.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/app/models/user.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/app/models/app.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/composer.json",
+				"/home/abhshkdz/projects/sdslabs/api-v2/config/developer.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/public/index.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/public/form.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/extras/Slim/Extras/Middleware/Jsonp.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/readme.md",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/JSON.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/app/models/apps.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/app/models/applications.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/Controller/Applications.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Router.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/controllers/Applications.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/Controller/Main.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/config/config.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/settings.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/Controller/main.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/controllers/app.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/controllers/main.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/SDSLabs/Router.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/controllers/applications.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/SDSLabs/Controller.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/config/example.developer.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/SessionCookie.php",
+				"/home/abhshkdz/projects/personal/razorpay/application/models/merchant.php",
+				"/home/abhshkdz/projects/personal/razorpay/application/controllers/account.php",
+				"/home/abhshkdz/projects/personal/razorpay/application/routes.php",
+				"/home/abhshkdz/projects/sdslabs/presence/app/bootstrap.php",
+				"/home/abhshkdz/projects/sdslabs/presence/config.cfg",
+				"/home/abhshkdz/projects/sdslabs/presence/app/user_class.php",
+				"/home/abhshkdz/projects/sdslabs/presence/sensors/lan.sh",
+				"/home/abhshkdz/projects/sdslabs/presence/app/controller/submit.php",
+				"/home/abhshkdz/projects/sdslabs/presence/app/controller/home.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/JSONP.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/jsonp.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/json.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/composer.lock",
+				"/home/abhshkdz/projects/sdslabs/api-v2/middleware/jsonp.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/middleware/json.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/Flash.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/slim/slim/Slim/Middleware/ContentTypes.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/autoload.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/composer/autoload_real.php",
+				"/home/abhshkdz/projects/sdslabs/api-v2/vendor/composer/installed.json",
+				"/home/abhshkdz/projects/sdslabs/api-v2/api.sdslabs.local",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/Phpcs/Default (Linux).sublime-keymap",
+				"/home/abhshkdz/projects/sdslabs/api-v2/public/test.php",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/Phpcs/phpcs.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/DocBlockr/Base File.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/abhshkdz/projects/sdslabs/filepanda/config/developer.php",
+				"/home/abhshkdz/projects/personal/core/includes/parser/Parser.php",
+				"/home/abhshkdz/projects/personal/razorpay/application/config/application.php",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/Gist/Gist.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/Gist.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/phpcs.sublime-settings",
+				"/home/abhshkdz/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+				"/usr/share/applications/sublime_text.desktop",
+				"/usr/share/applications/sublime.desktop"
+			],
+			"find":
+			{
+				"height": 33.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"twig",
+					"Controller",
+					"AllCapsMiddleware",
+					"tab",
+					"MYSQL"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"follow_symlinks": true,
+					"path": "/home/abhshkdz/projects/sdslabs/api-v2"
+				}
+			],
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 23.0
+			},
+			"input":
+			{
+				"height": 32.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,1,0,0,0,0,28,640,508,1920,1080",
+			"project": "",
+			"replace":
+			{
+				"height": 42.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 303.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 5,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
