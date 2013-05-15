@@ -7,3 +7,5 @@
 	user = abhshkdz
 #[url "https://"]
 #	insteadOf = git://
+[push]
+	default = simple
