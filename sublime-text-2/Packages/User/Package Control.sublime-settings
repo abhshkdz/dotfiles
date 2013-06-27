@@ -4,8 +4,11 @@
 		"Alignment",
 		"BracketHighlighter",
 		"Package Control",
+		"PhpDoc",
+		"phpDocumentor",
 		"SFTP",
 		"SideBarEnhancements",
-		"SublimeLinter"
+		"SublimeLinter",
+		"Theme - Flatland"
 	]
 }

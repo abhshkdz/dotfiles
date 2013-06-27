@@ -1,0 +1,10 @@
+[
+    { "caption": "-" },
+    {
+        "caption": "phpDocumentor",
+        "children":
+        [
+            { "command": "php_documentor_document_all", "args": { "paths": [] } }
+        ]
+    }
+]

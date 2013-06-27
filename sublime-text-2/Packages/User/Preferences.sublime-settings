@@ -1,9 +1,10 @@
 {
 	"caret_style": "smooth",
-	"color_scheme": "Packages/Color Scheme - Default/Zenburnesque.tmTheme",
+	"color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": true,
-	"font_size": 9,
+	"flatland_square_tabs": true,
+	"font_size": 8,
 	"ignored_packages":
 	[
 		"Vintage",
@@ -14,6 +15,7 @@
 	"save_on_focus_lost": false,
 	"shift_tab_unindent": true,
 	"tab_size": 4,
-	"translate_tabs_to_spaces": true,
+	"theme": "Flatland Dark.sublime-theme",
+	"translate_tabs_to_spaces": false,
 	"tree_animation_enabled": false
 }
