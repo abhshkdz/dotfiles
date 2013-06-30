@@ -45,7 +45,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/heroku/bin:/home/abhshkdz/Applications/sbt/bin:/home/abhshkdz/.nvm/v0.11.0/bin:/home/abhshkdz/.rvm/gems/ruby-2.0.0-p0/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/abhshkdz/.rvm/bin:/home/abhshkdz/.rvm/bin
+export PATH=$PATH:/usr/local/heroku/bin:/home/abhshkdz/Applications/sbt/bin:/home/abhshkdz/.nvm/v0.10.0/bin:/home/abhshkdz/.nvm/v0.11.0/bin:/home/abhshkdz/.rvm/gems/ruby-2.0.0-p0/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 [ -s "/home/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/home/abhshkdz/.scm_breeze/scm_breeze.sh"
+
+source $HOME/.nvm/nvm.sh
