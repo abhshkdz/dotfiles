@@ -1,11 +1,14 @@
 {
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"Alignment",
 		"BracketHighlighter",
+		"HTML Snippets",
 		"Package Control",
 		"PhpDoc",
 		"phpDocumentor",
+		"Sass",
 		"SFTP",
 		"SideBarEnhancements",
 		"SublimeLinter",
