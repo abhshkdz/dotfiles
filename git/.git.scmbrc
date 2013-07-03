@@ -55,7 +55,7 @@ git_fetch_all_alias="gfa"
 git_fetch_and_rebase_alias="gfr"
 git_pull_alias="gpl"
 git_push_alias="gps"
-git_force_push_alias="gpfs"
+git_push_force_alias="gpsf"
 git_pull_then_push_alias="gpls"
 git_status_original_alias="gst"
 git_status_short_alias="gss"
@@ -82,7 +82,9 @@ git_log_stat_alias="gls"
 git_log_graph_alias="glg"
 git_show_alias="gsh"
 git_show_summary="gsm"  # (gss taken by git status short)
-git_stash="gssh"
+git_stash_alias="gash"
+git_stash_apply_alias="gasha"
+git_stash_list_alias="gashl"
 
 
 # Git Keyboard Shortcuts
