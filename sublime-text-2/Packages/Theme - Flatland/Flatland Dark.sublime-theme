@@ -648,7 +648,7 @@
     {
         "class": "quick_panel",
         "row_padding": [5, 2],
-        "layer0.tint": [252, 0, 0],
+        "layer0.tint": [49, 52, 55],
         "layer0.opacity": 1.0
     },
     {
@@ -741,7 +741,6 @@
     {
         "class": "icon_button_control",
         "layer0.texture": "Theme - Flatland/Flatland Dark/btn-group-middle.png",
-        "layer0.inner_margin": [6, 6],
         "layer0.opacity": 1.0,
         "content_margin": [4, 4,4,5]
     },

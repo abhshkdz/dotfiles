@@ -4,13 +4,17 @@
 		"AdvancedNewFile",
 		"Alignment",
 		"BracketHighlighter",
+		"DocBlockr",
+		"Emmet",
 		"HTML Snippets",
 		"Package Control",
 		"PhpDoc",
 		"phpDocumentor",
+		"Prefixr",
 		"Sass",
 		"SFTP",
 		"SideBarEnhancements",
+		"Stylus",
 		"SublimeLinter",
 		"Theme - Flatland"
 	]
