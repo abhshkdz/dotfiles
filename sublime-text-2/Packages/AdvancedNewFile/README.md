@@ -22,11 +22,40 @@ Clone or copy this repository into the packages directory. By default, they are 
 * Windows: %APPDATA%/Roaming/Sublime Text 2/Packages/
 * Linux: ~/.config/sublime-text-2/Packages/
 
+or
+
+* OS X: ~/Library/Application Support/Sublime Text 3/Packages/
+* Windows: %APPDATA%/Roaming/Sublime Text 3/Packages/
+* Linux: ~/.config/sublime-text-3/Packages/
+
 ## Usage
 Simply bring up the AdvancedNewFile input through the appropriate [key binding](https://github.com/skuroda/Sublime-AdvancedNewFile). Then, enter the path, along with the file name into the input field. Upon pressing enter, the file will be created. In addition, if the directories specified do not yet exists, they will also be created. For more advanced usage of this plugin, be sure to look at [Advanced Path Usage](https://github.com/skuroda/Sublime-AdvancedNewFile#advanced-path-usage). By default, the path to the file being created will be filled shown in the status bar as you enter the path information.
 
 **Default directory:**
 The default directory is specified by the `default_root` setting. By default, it will be the top directory of the folders listed in the window. If this cannot be resolved, the home directory will be used. See [Settings](https://github.com/skuroda/Sublime-AdvancedNewFile#settings) (`default_root`) for more information.
+
+### Commands with no Default Bindings
+The following commands are supported, but have no forward facing bindings. You may choose to create key bindings, command palette entries, or context menu entries for them yourself.
+
+#### Rename File
+To execute the command to rename the current active view, use the command `advanced_new_file` with the argument parameter `{"rename": true}`. An example keybinding for this is
+
+    [
+        {"keys": ["alt+shift+n"], "command": "advanced_new_file", "args": {"rename": true}}
+    ]
+
+#### Rename File - Context Menu
+To create a sidebar menu entry, you need to create a file named `Side Bar.sublime-menu`. It is recommended you place this in your `User` directory. Like the key binding files, this menu is a list of command entries. Each entry contains 3 items. The first is the `caption`. This is the string that appears in the menu. Next is the `command`. For this, you will use `advanced_new_file_rename_at`. Finally, are the `args`. You will need to specify `{"files": []}`. An example entry can be seen below.
+
+    [
+        { "caption": "ANF: Rename", "command": "advanced_new_file_rename_at", "args": {"files": []}}
+    ]
+
+To create a context menu entry for the view, create a file named `Context.sublime-menu`. A sample entry can be seen below.
+
+    [
+        {"caption": "ANF: Rename", "command": "advanced_new_file", "args": {"rename": true}}
+    ]
 
 ## Keymaps
 If you have issues with keymaps, consider running [FindKeyConflicts](https://github.com/skuroda/FindKeyConflicts), also available through the package manager. Alternatively, set command logging to true by entering `sublime.log_commands(True)` in the Sublime Text console.
@@ -44,6 +73,8 @@ The super keys for Linux and OS X are the Windows and command key respectively.
 `shift+super+alt+n`: In addition to creating the folders specified, new folders will also contain an `__init__.py` file.
 
 ## Settings
+Default settings can be seen by navigating to `Preferences -> Packages Settings -> AdvancedNewFile - Default`. To modify the default settings, navigate to `Preferences -> Packages Settings -> AdvancedNewFile -> User`.
+
 `alias`:
 
 A dictionary that contains a set of aliases tied to a directory. For more information, see [Aliases](https://github.com/skuroda/Sublime-AdvancedNewFile#aliases)
@@ -111,13 +142,43 @@ A boolean specifying if folders should automatically refresh and update the side
 
 A boolean specifying if an AdvancedNewFile option should be shown in the sidebar context menu.
 
+`completion_type`:
+
+A string specifying the type of auto completion to use. Valid values are "windows" or "nix".
+
+`complete_single_entry`
+
+A boolean setting specifying if a separator should be inserted when there is only one completion and completion type is "windows"
+
+`use_folder_name`:
+
+A boolean setting specifying if the folder name should be used or the name specified in the project. This setting only applies to ST3.
+
+`relative_from_current`:
+
+Boolean setting specifying if relative paths should be based on the current working directory.
+
+`default_extension`:
+
+String containing the default file extension. Note the extension is only applied if the specified path does not contain a dot (.) character.
+
+`folder_permissions`:
+
+String representing permissions to be applied to newly created folders. E.g. "777" -> RWX for user, group, and other.
+
+`file_permissions`:
+
+String representing permissions to be applied to newly created files. E.g. "777" -> RWX for user, group, and other.
+
+`rename_default`:
+
+Default input for renaming a file. Special value `<current>` will be replaced with the current file name.
+
 ### Project Specific Settings
 All of the above settings can also be specified as part of the project specific settings. These values override any previous values set by higher level settings, with aliases being an exception. Alias settings will be merged with higher level configurations for alias. In addition, if the same alias exist for both default/user settings and project settings, the project setting will take precedence.
 
-    "settings":
-    {
-        "AdvancedNewFile":
-        {
+    "settings": {
+        "AdvancedNewFile": {
             "default_initial": "/project/specific/path"
         }
     }
@@ -158,7 +219,7 @@ Sample OS Specific Aliases:
 
     {
         "os_specific_alias": {
-            "subl_packages" {
+            "subl_packages": {
                 "windows": "~\\AppData\\Roaming\\Sublime Text 2\\Packages",
                 "linux": "~/.config/sublime-text-2/Packages",
                 "osx": "~/Library/Application Support/Sublime Text 2/Packages"
@@ -170,8 +231,12 @@ Sample OS Specific Aliases:
 ###### Top level folders in window
 Top level folders can be specified by typing in the name of the folder followed by a colon. Then specify the path as you would normally.
 
+**Note**
+
+In Sublime Text 2, the name of the folder will be the actual name of the folder, not an arbitrary name specified in the project. However, due to an API update, folder names in Sublime Text 3 will match the Side Bar names. To achieve a similar behavior in Sublime Text 2, you can create `Project Specific Settings` for `alias`.
+
 ###### Current Working Directory
-To specify the current working directory, simply type a colon, without any preceding text.
+To specify the current working directory, simply type a colon, without any preceding text. Alternatively, set `relative_from_current` to `true` in your settings. Paths specified as relative paths will then begin from the current working directory.
 
 ## Notes
 Thanks to Dima Kukushkin ([xobb1t](https://github.com/xobb1t)) for the original work on this plugin. Also, thank you to [facelessuser](https://github.com/facelessuser), and by extension biermeester and matthjes for the idea of platform specific settings.

@@ -1,4 +1,4 @@
-DocBlockr is a package for [Sublime Text 2 & 3][sublime] which makes writing documentation a breeze. DocBlockr supports **Javascript**, **PHP**, **ActionScript**, **CoffeeScript**, **Java**, **Groovy**, **Objective C**, **C** and **C++**.
+DocBlockr is a package for [Sublime Text 2 & 3][sublime] which makes writing documentation a breeze. DocBlockr supports **Javascript**, **PHP**, **ActionScript**, **CoffeeScript**, **Java**, **Groovy**, **Objective C**, **C**, **C++** and **Rust**.
 
 ## Installation ##
 
@@ -12,29 +12,31 @@ You can leave either of these things [here][issues]. Pull requests are welcomed 
 
 ## Changelog ##
 
+- **v2.11.7**, *3 Nov 2013*
+  - Added support for triple `///`, `//!` and `/*!` style comments, thanks to [Jordi Boggiano](https://github.com/seldaek).
+  - Added basic **Rust** support, again thanks to Jordi Boggiano.
+  - Added an option to use short names for bools and ints (`jsdocs_short_primitives`), thanks to [Mat Gadd](https://github.com/drarok).
+  - Fixed a bug with per-section indenting, again thanks to Mat Gadd.
+  - Improved handling of Java return type detection, thanks to [Ben Linskey](https://github.com/blinskey)
+- **v2.11.6**, *14 Aug 2013*
+  - Predefined `@author` tags do not get parsed for column spacing
+  - Handles the case when an arguments list contains a comma, for example, within a default value
+  - A new keybinding for Windows to re-parse a doc block (<kbd>Alt+W</kbd>)
+  - Fixes a regression that some function names were not being parsed correctly
+- **v2.11.5**, *11 Aug 2013*
+  - Fix for last deploy which accidentally changed the default `var` tag to "property". Default is "type" once again.
+- **v2.11.4**, *10 Aug 2013*
+  - The tag used on `var` declarations can be customised (eg: to "property" for YUIDoc)
+  - Small fix for function declarations in C/C++ (thanks to [Simon Aittamaa](https://github.com/simait))
 - **v2.11.3**, *18 June 2013*
   - Adds support for Groovy (thanks to [Tiago Santos](https://github.com/tmcsantos))
   - README has gifs. So many gifs.
-- **v2.11.2**, *12 June 2013*
-  - Compatibility fixes for ST3, thanks to Marc Neuhaus (@mneuhaus) and Daniel Julius Lasiman (@danieljl).
-- **v2.11.1**, *11 May 2013*
-  - No changes, just removes some debugging code that wasn't cleaned up in the last release (oops).
-- **v2.11.0**, *11 May 2013*
-  - It isn't broken in ST3 any more. (yay)
-  - New options:
-    - `jsdocs_simple_mode` for when you don't want dynamic templates
-    - `jsdocs_lower_case_primitives` for YUIDoc which requires lower case for primitive data types
-    - `jsdocs_extra_tags_go_after` to put custom text at the end of the docblock
-  - Better handling of IIFEs
-  - Hotkey for reparsing a block changed to <kbd>alt+shift+tab</kbd> to avoid OS-level conflicts
-  - Adding a new line at the start of the docblock is handled properly
-  - C/C++: arguments containing square brackets are handled properly
 
 Older history can be found in [the history file](https://github.com/spadgos/sublime-jsdocs/blob/master/HISTORY.md).
 
 ## Usage ##
 
-> Below are some examples of what the package does. The pipe (`|`) indicates where the cursor will be after the action has run. Note that there are no keyboard shortcuts required to trigger these completions - just type as normal and it happens for you!
+> Below are some examples of what the package does. Note that there are no keyboard shortcuts required to trigger these completions - just type as normal and it happens for you!
 
 ### Docblock completion ###
 
@@ -58,7 +60,6 @@ If you have many arguments, or long variable names, it might be useful to spread
 
 ![](http://spadgos.github.io/sublime-jsdocs/images/long-args.gif)
 
-
 In languages which support [type hinting][typehinting] or default values, then those types are prefilled as the datatypes.
 
 ![](http://spadgos.github.io/sublime-jsdocs/images/type-hinting.gif)
@@ -68,14 +69,11 @@ DocBlockr will try to make an intelligent guess about the return value of the fu
 - If the function name is or begins with "set" or "add", then no `@return` is inserted.
 - If the function name is or begins with "is" or "has", then it is assumed to return a `Boolean`.
 - In Javascript, if the function begins with an uppercase letter then it is assumed that the function is a class definition. No `@return` tag is added.
-- In Javascript, functions beginning with an underscore are assumed to be private: `@private` is added to these.
 - In PHP, some of the [magic methods][magicmethods] have their values prefilled:
   - `__construct`, `__destruct`, `__set`, `__unset`, `__wakeup` have no `@return` tag.
   - `__sleep` returns an `Array`.
   - `__toString` returns a `string`.
   - `__isset` returns a `bool`.
-
-In Javascript, functions beginning with an underscore are given a `@private` tag by default.
 
 ### Variable documentation ###
 
@@ -87,7 +85,7 @@ If you press `shift+enter` after the opening `/**` then the docblock will be ins
 
 DocBlockr will also try to determine the type of the variable from its name. Variables starting with `is` or `has` are assumed to be booleans, and `callback`, `cb`, `done`, `fn`, and `next` are assumed to be functions. If you use your own variable naming system (eg: hungarian notation: booleans all start with `b`, arrays start with `arr`), you can define these rules yourself. Modify the `jsdocs_notation_map` setting *(in `Base File.sublime-settings`)* like so:
 
-```javascript
+```json
 {
     "jsdocs_notation_map": [
         {
@@ -104,7 +102,7 @@ DocBlockr will also try to determine the type of the variable from its name. Var
 
 The notation map can also be used to add arbitrary tags, according to your own code conventions. For example, if your conventions state that functions beginning with an underscore are private, you could add this to the `jsdocs_notation_map`:
 
-```javascript
+```json
 {
     "prefix": "_",
     "tags": ["@private"]
@@ -145,7 +143,7 @@ If you write a double-slash comment and then press `Ctrl+Enter`, DocBlockr will 
 
 Sometimes, you'll perform some action which clears the fields (sections of text which you can navigate through using `tab`). This leaves you with a number of placeholders in the DocBlock with no easy way to jump to them.
 
-With DocBlockr, you can reparse a comment and reactivate the fields by pressing the hotkey `Alt+Shift+Tab`
+With DocBlockr, you can reparse a comment and reactivate the fields by pressing the hotkey `Alt+Shift+Tab` in OS X or Linux, or `Alt+W` in Windows
 
 ### Reformatting paragraphs ###
 
@@ -248,6 +246,10 @@ You can access the configuration settings by selecting `Preferences -> Package S
 - `jsdocs_simple_mode` *(Boolean)* If true, DocBlockr won't add a template when creating a doc block before a function or variable. Useful if you don't want to write Javadoc-style, but still want your editor to help when writing block comments. Default: `false`
 
 - `jsdocs_lower_case_primitives` *(Boolean)* If true, primitive data types are added in lower case, eg "number" instead of "Number". Default: `false`
+
+- `jsdocs_short_primitives` *(Boolean)* If true, the primitives `Boolean` and `Integer` are shortened to `Bool` and `Int`. Default: `false`
+
+- `jsdocs_newline_after_block` *(Boolean)* If true, an extra line break is added after the end of a docblock to separate it from the code. Default `false`
 
 This is my first package for Sublime Text, and the first time I've written any Python, so I heartily welcome feedback and [feature requests or bug reports][issues].
 

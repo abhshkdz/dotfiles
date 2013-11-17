@@ -1,4 +1,5 @@
 {
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -7,12 +8,14 @@
 		"DocBlockr",
 		"Emmet",
 		"HTML Snippets",
+		"JSONLint",
 		"LiveReload",
 		"Markdown Preview",
 		"Package Control",
 		"PhpDoc",
 		"phpDocumentor",
 		"Prefixr",
+		"Pretty JSON",
 		"Sass",
 		"SFTP",
 		"SideBarEnhancements",

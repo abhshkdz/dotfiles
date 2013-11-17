@@ -80,5 +80,37 @@
 
     // A boolean specifying if an AdvancedNewFile option should be shown in the
     // sidebar context menu.
-    "show_sidebar_menu": false
+    "show_sidebar_menu": false,
+
+    // A string specifying the type of auto completion to use. Valid values are
+    // "windows" or "nix"
+    "completion_type": "windows",
+
+    // A boolean setting specifying if a separator should be inserted when
+    // there is only one completion and completion type is "windows"
+    "complete_single_entry": true,
+
+    // A boolean setting specifying if the folder name should be used
+    // or the name specified in the project. This setting only applies to ST3.
+    "use_folder_name": false,
+
+    // Boolean setting specifying if relative paths should be based on the
+    // current working directory.
+    "relative_from_current": true,
+
+    // String containing the default file extension. Note the extension is only applied
+    // if the specified path does not contain a dot (.) character.
+    "default_extension": "",
+
+    // String representing permissions to be applied to newly created directories.
+    // e.g. "777" -> RWX for user, group, and other.
+    "folder_permissions": "",
+
+    // String representing permissions to be applied to newly created files.
+    // e.g. "777" -> RWX for user, group, and other.
+    "file_permissions": "",
+
+    // Default input for renaming a file. Special value <current> will be replaced
+    // with the current file name.
+    "rename_default": ""
 }

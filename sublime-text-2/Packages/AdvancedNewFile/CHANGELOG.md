@@ -1,6 +1,44 @@
 # Changelog for AdvancedNewFile
+- 9 November 2013
+    - Rename default with special token for current file.
+    - README updates.
+
+- 4 October 2013
+    - Rename file using side bar context menu.
+    - Set folder and file permissions for created folders and files.
+
+- 23 September 2013
+    - Support renaming current file.
+
+- 9 September 2013
+    - Bug fix for folder creation.
+    - Bug fix for permission issue.
+    - Add default extension setting.
+
+- 2 September 2013
+    - Add setting to begin all relative paths from current working directory if available.
+
+- 14 August 2013
+    - Prompt completion type for first token when using Windows completion.
+    - Fix bug with path autocompletion.
+    - Fix bug for tab completion with no view.
+
+- 27 July 2013
+    - Rewrite autocomplete functionality.
+    - Bug Fixes
+        - Snippets no longer appear when entering completions.
+
+- 22 April 2013
+    - Add option to refresh sidebar after creating a file.
+    - Add side bar context menu.
+    - Bug Fixes
+        - Multiple autocomplete issues.
+        - Creation of __init__.py files.
+        - Filling text with cursor values.
+
 - 2 February 2013
     - Update to be compatible with Sublime Text 3.
+
 - 14 January 2013
     - Add `alias_root` setting, used with aliases with relative paths.
     - Add setting to allow user to specify which folder from the project should be used.

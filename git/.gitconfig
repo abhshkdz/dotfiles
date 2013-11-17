@@ -5,7 +5,7 @@
 	editor = vim
 [github]
 	user = abhshkdz
-#[url "https://"]
-#	insteadOf = git://
+[url "https://"]
+	insteadOf = git://
 [push]
 	default = simple

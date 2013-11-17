@@ -14,22 +14,6 @@ from send2trash import send2trash
 if sublime.platform() == 'windows':
 	import _winreg
 
-def disable_default():
-	default = sublime.packages_path()+'/Default/Side Bar.sublime-menu'
-	desired = sublime.packages_path()+'/SideBarEnhancements/disable_default/Side Bar.sublime-menu.txt'
-	if file(default, 'r').read() ==  file(desired, 'r').read():
-		file(default, 'w+').write('[/*'+file(desired, 'r').read()+'*/]')
-
-	default = sublime.packages_path()+'/Default/Side Bar Mount Point.sublime-menu'
-	desired = sublime.packages_path()+'/SideBarEnhancements/disable_default/Side Bar Mount Point.sublime-menu.txt'
-	if file(default, 'r').read() ==  file(desired, 'r').read():
-		file(default, 'w+').write('[/*'+file(desired, 'r').read()+'*/]')
-
-try:
-	disable_default();
-except:
-	pass
-
 def expand_vars(path):
 	for k, v in os.environ.iteritems():
 		# dirty hack, this should be autofixed in python3
@@ -165,34 +149,6 @@ class SideBarFilesOpenWithEditApplicationsCommand(sublime_plugin.WindowCommand):
 									"paths": [],
 									"application": "Adobe Photoshop CS5.app", // OSX
 									"extensions":"psd|png|jpg|jpeg"  //any file with these extensions
-								}
-			},
-
-			//separator
-			{"caption":"-"},
-
-			//application 2
-			{
-				"caption": "SeaMonkey",
-				"id": "side-bar-files-open-with-seamonkey",
-
-				"command": "side_bar_files_open_with",
-				"args": {
-									"paths": [],
-									"application": "C:\\\\Archivos de programa\\\\SeaMonkey\\\\seamonkey.exe", // WINNT
-									"extensions":"" //open all even folders
-								}
-			},
-			//application n
-			{
-				"caption": "Chrome",
-				"id": "side-bar-files-open-with-chrome",
-
-				"command": "side_bar_files_open_with",
-				"args": {
-									"paths": [],
-									"application": "C:\\\\Documents and Settings\\\\tito\\\\Configuración local\\\\Datos de programa\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe",
-									"extensions":".*" //any file with extension
 								}
 			},
 
@@ -1240,9 +1196,7 @@ class SideBarProjectItemExcludeCommand(sublime_plugin.WindowCommand):
 class SideBarOpenInBrowserCommand(sublime_plugin.WindowCommand):
 	def run(self, paths = [], type = False):
 
-		browser = s.get("default_browser")
-		if browser == '':
-			browser = 'firefox'
+		browser = s.get("default_browser", "")
 
 		if type == False or type == 'testing':
 			type = 'url_testing'
@@ -1432,8 +1386,11 @@ class SideBarOpenInBrowserCommand(sublime_plugin.WindowCommand):
 				])
 				commands = ['-new-tab', '-url', url]
 		else:
-			sublime.error_message('Browser "'+browser+'" not found!\nUse any of the following: firefox, chrome, chromium, opera, safari')
-			return
+			if s.get('portable_browser') != '':
+				items.extend([s.get('portable_browser')])
+			commands = ['-new-tab', url]
+			#sublime.error_message('Browser "'+browser+'" not found!\nUse any of the following: firefox, chrome, chromium, opera, safari')
+			#return
 
 		for item in items:
 			try:
