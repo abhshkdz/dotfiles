@@ -1,11 +1,7 @@
 [user]
-	name = Abhishek Das
 	email = das.abhshk@gmail.com
+	name = Abhishek Das
 [core]
 	editor = vim
-[github]
-	user = abhshkdz
-[url "https://"]
-	insteadOf = git://
 [push]
-	default = simple
+	default = matching
