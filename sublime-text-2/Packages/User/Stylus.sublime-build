@@ -1,5 +1,0 @@
-{
-    "cmd": ["./build.sh"],
-    "path": "/home/abhshkdz/.nvm/v0.10.0/bin",
-    "working_dir": "${project_path:${folder}}"
-}

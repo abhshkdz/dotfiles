@@ -1,5 +1,0 @@
-{
-	"cmd": ["./build.sh"],
-	"path": "/opt/restdown/bin",
-	"working_dir": "${project_path:${folder}}/docs"
-}
