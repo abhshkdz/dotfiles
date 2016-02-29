@@ -10,3 +10,27 @@
 [submodule "vim/.vim/bundle/colorschemes"]
 	path = vim/.vim/bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim/.vim/bundle/syntastic"]
+	path = vim/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "vim/.vim/bundle/protobuf"]
+	path = vim/.vim/bundle/protobuf
+	url = git://github.com/uarun/vim-protobuf.git
+[submodule "vim/.vim/bundle/torch-snipmate"]
+	path = vim/.vim/bundle/torch-snipmate
+	url = https://github.com/jakezhaojb/vim-torch-snipmate.git
+[submodule "vim/.vim/bundle/tlib"]
+	path = vim/.vim/bundle/tlib
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "vim/.vim/bundle/addon-mw-utils"]
+	path = vim/.vim/bundle/addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vim/.vim/bundle/snipmate"]
+	path = vim/.vim/bundle/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "vim/.vim/bundle/snippets"]
+	path = vim/.vim/bundle/snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "tmux/.tmux"]
+	path = tmux/.tmux
+	url = https://github.com/gpakosz/.tmux.git
