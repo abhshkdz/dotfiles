@@ -11,7 +11,7 @@ ZSH_THEME="cloud"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -79,33 +79,41 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Aliases
-alias update="sudo apt-fast update"
-alias upgrade="sudo apt-fast upgrade"
-alias install="sudo apt-fast install $1"
+# User specific aliases and functions
+# export PATH=/srv/share/torch/install/bin:$PATH
+# export LD_LIBRARY_PATH=/srv/share/torch/install/lib:$LD_LIBRARY_PATH 
+# export DYLD_LIBRARY_PATH=/srv/share/torch/install/lib:$DYLD_LIBRARY_PATH
 
-# NVM
-export NVM_DIR="/home/abhshkdz/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# DIGITS / Caffe
-export CAFFE_HOME=${HOME}/projects/personal/caffe-0.11.0
-export PYTHONPATH=/home/abhshkdz/projects/personal/caffe/python:$PYTHONPATH
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# SCM Breeze
-[ -s "/home/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/home/abhshkdz/.scm_breeze/scm_breeze.sh"
+# export CAFFE=/srv/share/caffe_gpu
+export CAFFE=/home/abhshkdz/caffe
+export PYTHONPATH=/home/abhshkdz/caffe/python:$PYTHONPATH
 
 # CUDA
-export CUDA_HOME=/usr/local/cuda-7.0
-export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
-export PATH=${CUDA_HOME}/bin:${PATH}
+export PATH=/usr/local/cuda/bin:$PATH
 
-# added by Anaconda 2.2.0 installer
-# export PATH="/home/abhshkdz/softwares/anaconda/bin:$PATH"
+export PATH="$PATH:/srv/share/gpu_lock"
+export PYTHONPATH="$PYTHONPATH:/srv/share/gpu_lock:/usr/include/python2.7"
+
+# SCM breeze
+[ -s "/home/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/home/abhshkdz/.scm_breeze/scm_breeze.sh"
+
+# added by Anaconda 2.3.0 installer
+export PATH="/home/abhshkdz/anaconda/bin:$PATH"
+export PATH="/home/abhshkdz/local/bin:/home/abhshkdz/local/lib:$PATH"
+
+# autojump
+[[ -s /home/abhshkdz/.autojump/etc/profile.d/autojump.sh ]] && source /home/abhshkdz/.autojump/etc/profile.d/autojump.sh
+
+# tensorflow
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/home/abhshkdz/cuda/lib64"
+export CUDA_HOME=/usr/local/cuda
+
+# bazel
+export JAVA_HOME="/usr/lib/jvm/java"
+
+# nltk
+export NLTK_DATA=/home/abhshkdz/nltk_data
 
 # Torch
-export PATH=/home/abhshkdz/softwares/torch/install/bin:$PATH  # Added automatically by torch-dist
-export LD_LIBRARY_PATH=/home/abhshkdz/softwares/torch/install/lib:$LD_LIBRARY_PATH  # Added automatically by torch-dist
-export DYLD_LIBRARY_PATH=/home/abhshkdz/softwares/torch/install/lib:$DYLD_LIBRARY_PATH  # Added automatically by torch-dist
+. /home/abhshkdz/torch/install/bin/torch-activate
+# . /home/abhshkdz/torch-without-luajit/install/bin/torch-activate
