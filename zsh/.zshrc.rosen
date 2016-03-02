@@ -80,6 +80,7 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux="TERM=screen-256color-bce tmux"
+alias ls="ls --color -hGp"
 
 # User specific aliases and functions
 # export PATH=/srv/share/torch/install/bin:$PATH
