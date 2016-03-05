@@ -10,9 +10,6 @@
 [submodule "vim/.vim/bundle/colorschemes"]
 	path = vim/.vim/bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
-[submodule "vim/.vim/bundle/syntastic"]
-	path = vim/.vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic
 [submodule "vim/.vim/bundle/protobuf"]
 	path = vim/.vim/bundle/protobuf
 	url = git://github.com/uarun/vim-protobuf.git
