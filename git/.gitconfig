@@ -1,7 +1,15 @@
 [user]
-	email = das.abhshk@gmail.com
-	name = Abhishek Das
+    email = das.abhshk@gmail.com
+    name = Abhishek Das
 [core]
-	editor = vim
+    editor = vim
 [push]
-	default = matching
+    default = matching
+[alias]
+    rom = rebase origin/master
+    pom = push origin master
+    po  = push origin
+    fo  = fetch origin
+[color]
+    diff = always
+    branch = always
