@@ -88,3 +88,6 @@ export LANG=en_US.UTF-8
 
 # Anaconda
 export PATH=/Users/abhshkdz/softwares/anaconda2/bin:$PATH
+
+# Torch
+. /Users/abhshkdz/softwares/torch/install/bin/torch-activate
