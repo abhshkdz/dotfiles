@@ -2,7 +2,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab fileformat=unix
 colorscheme molokai
 set pastetoggle=<F2>
 

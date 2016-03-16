@@ -118,5 +118,5 @@ export JAVA_HOME="/usr/lib/jvm/java"
 export NLTK_DATA=/home/abhshkdz/nltk_data
 
 # Torch
-. /home/abhshkdz/torch/install/bin/torch-activate
-# . /home/abhshkdz/torch-without-luajit/install/bin/torch-activate
+# . /home/abhshkdz/torch/install/bin/torch-activate
+. /home/abhshkdz/torch-without-luajit/install/bin/torch-activate
