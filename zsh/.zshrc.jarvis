@@ -45,7 +45,7 @@ ZSH_THEME="nebirhos"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump composer npm pip python sublime sudo sprunge)
+plugins=(autojump npm pip python sublime sudo)
 
 # User configuration
 
