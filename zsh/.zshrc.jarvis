@@ -107,6 +107,7 @@ export PATH=${CUDA_HOME}/bin:${PATH}
 # export PATH="/home/abhshkdz/softwares/anaconda/bin:$PATH"
 
 # Torch
-export PATH=/home/abhshkdz/softwares/torch/install/bin:$PATH  # Added automatically by torch-dist
-export LD_LIBRARY_PATH=/home/abhshkdz/softwares/torch/install/lib:$LD_LIBRARY_PATH  # Added automatically by torch-dist
-export DYLD_LIBRARY_PATH=/home/abhshkdz/softwares/torch/install/lib:$DYLD_LIBRARY_PATH  # Added automatically by torch-dist
+# export PATH=/home/abhshkdz/softwares/torch/install/bin:$PATH  # Added automatically by torch-dist
+# export LD_LIBRARY_PATH=/home/abhshkdz/softwares/torch/install/lib:$LD_LIBRARY_PATH  # Added automatically by torch-dist
+# export DYLD_LIBRARY_PATH=/home/abhshkdz/softwares/torch/install/lib:$DYLD_LIBRARY_PATH  # Added automatically by torch-dist
+. /home/abhshkdz/softwares/torch-without-luajit/install/bin/torch-activate
