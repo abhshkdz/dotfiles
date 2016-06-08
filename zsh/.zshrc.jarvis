@@ -95,6 +95,9 @@ export PYTHONPATH=/home/abhshkdz/projects/personal/caffe/python:$PYTHONPATH
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
+# Source RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 # SCM Breeze
 [ -s "/home/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/home/abhshkdz/.scm_breeze/scm_breeze.sh"
 
