@@ -25,3 +25,6 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 " NERDCommenter
 let mapleader = ","
 let g:NERDSpaceDelims = 1
+
+" LaTeX (rubber) macro
+nnoremap <leader>c :w<CR>:!rubber --pdf --warn all %<CR>
