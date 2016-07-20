@@ -2,7 +2,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab fileformat=unix
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab fileformat=unix
 colorscheme molokai
 set pastetoggle=<F2>
 
@@ -28,3 +28,6 @@ let g:NERDSpaceDelims = 1
 
 " LaTeX (rubber) macro
 nnoremap <leader>c :w<CR>:!rubber --pdf --warn all %<CR>
+
+" Fix backspace 'feature'
+set backspace=indent,eol,start
