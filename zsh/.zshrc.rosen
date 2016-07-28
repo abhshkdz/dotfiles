@@ -97,9 +97,6 @@ export PATH=/usr/local/cuda/bin:$PATH
 export PATH="$PATH:/srv/share/gpu_lock"
 export PYTHONPATH="$PYTHONPATH:/srv/share/gpu_lock:/usr/include/python2.7"
 
-# SCM breeze
-[ -s "/home/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/home/abhshkdz/.scm_breeze/scm_breeze.sh"
-
 # added by Anaconda 2.3.0 installer
 export PATH="/home/abhshkdz/anaconda/bin:$PATH"
 export PATH="/home/abhshkdz/local/bin:/home/abhshkdz/local/lib:$PATH"
@@ -118,5 +115,11 @@ export JAVA_HOME="/usr/lib/jvm/java"
 export NLTK_DATA=/home/abhshkdz/nltk_data
 
 # Torch
-# . /home/abhshkdz/torch/install/bin/torch-activate
-. /home/abhshkdz/torch-without-luajit/install/bin/torch-activate
+. /home/abhshkdz/torch/install/bin/torch-activate
+# . /home/abhshkdz/torch-without-luajit/install/bin/torch-activate
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# SCM breeze
+[ -s "/home/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/home/abhshkdz/.scm_breeze/scm_breeze.sh"
+
