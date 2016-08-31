@@ -84,6 +84,8 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim='/usr/local/bin/vim'
 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
 # SCM Breeze
 [ -s "/Users/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/Users/abhshkdz/.scm_breeze/scm_breeze.sh"
 

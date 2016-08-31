@@ -3,7 +3,8 @@ syntax on
 filetype plugin indent on
 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab fileformat=unix
-colorscheme molokai
+set number incsearch hlsearch
+colorscheme Tomorrow-Night-Bright
 set pastetoggle=<F2>
 
 " Protobuf highlighting
@@ -31,3 +32,8 @@ nnoremap <leader>c :w<CR>:!rubber --pdf --warn all %<CR>
 
 " Fix backspace 'feature'
 set backspace=indent,eol,start
+
+" Custom key bindings
+inoremap jk <ESC>
+nnoremap j gj
+nnoremap k gk
