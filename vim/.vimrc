@@ -3,9 +3,8 @@ syntax on
 filetype plugin indent on
 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab fileformat=unix
-set number incsearch hlsearch
+set number incsearch hlsearch ruler
 colorscheme Tomorrow-Night-Bright
-set pastetoggle=<F2>
 
 " Protobuf highlighting
 augroup filetype
@@ -33,7 +32,26 @@ nnoremap <leader>c :w<CR>:!rubber --pdf --warn all %<CR>
 " Fix backspace 'feature'
 set backspace=indent,eol,start
 
-" Custom key bindings
+" Quick exit from insert mode
 inoremap jk <ESC>
+
+" Navigating long lines
 nnoremap j gj
 nnoremap k gk
+
+" Quick saving
+nmap <leader>w :w<cr>
+nmap <leader>q :wq<cr>
+
+" Toggle paste mode on and off
+map <leader>pp :setlocal paste!<cr>
+
+" Quickly open some files
+map <leader>vim :e ~/.vimrc<cr>
+map <leader>bash :e ~/.bashrc<cr>
+map <leader>readme :e ./README.md<cr>
+
+" Open vimgrep and put the cursor in the right position
+map <leader>g :vimgrep // */*<left><left><left><left><left>
+map <leader>n :cn<cr>
+map <leader>p :cp<cr>
