@@ -36,4 +36,7 @@
 	url = git@github.com:lervag/vimtex.git
 [submodule "vim/.vim/bundle/nerdcommenter"]
 	path = vim/.vim/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/.vim/bundle/gitgutter"]
+	path = vim/.vim/bundle/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
