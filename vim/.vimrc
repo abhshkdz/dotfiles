@@ -2,7 +2,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab fileformat=unix
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 fileformat=unix
 set number incsearch hlsearch ruler
 colorscheme Tomorrow-Night-Bright
 
@@ -55,3 +55,6 @@ map <leader>readme :e ./README.md<cr>
 map <leader>g :vimgrep // */*<left><left><left><left><left>
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
+
+" Updatetime
+set updatetime=250
