@@ -92,7 +92,8 @@ export CAFFE=/home/abhshkdz/caffe
 export PYTHONPATH=/home/abhshkdz/caffe/python:$PYTHONPATH
 
 # CUDA
-export PATH=/usr/local/cuda/bin:$PATH
+export PATH=/usr/local/cuda-7.5/bin:$PATH
+# export PATH=/home/abhshkdz/cuda/lib64/:$PATH
 
 export PATH="$PATH:/srv/share/gpu_lock"
 export PYTHONPATH="$PYTHONPATH:/srv/share/gpu_lock:/usr/include/python2.7"
@@ -105,8 +106,11 @@ export PATH="/home/abhshkdz/local/bin:/home/abhshkdz/local/lib:$PATH"
 [[ -s /home/abhshkdz/.autojump/etc/profile.d/autojump.sh ]] && source /home/abhshkdz/.autojump/etc/profile.d/autojump.sh
 
 # tensorflow
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/home/abhshkdz/cuda/lib64"
-export CUDA_HOME=/usr/local/cuda
+# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/home/abhshkdz/cuda/lib64"
+# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/abhshkdz/cuda/lib64"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-7.5/lib64:/home/abhshkdz/cuda/lib64"
+export CUDA_HOME=/usr/local/cuda-7.5
+# export CUDA_HOME=/home/abhshkdz/cuda/lib64
 
 # bazel
 export JAVA_HOME="/usr/lib/jvm/java"
