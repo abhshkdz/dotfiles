@@ -4,7 +4,7 @@ filetype plugin indent on
 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 fileformat=unix
 set number incsearch hlsearch ruler
-colorscheme Tomorrow-Night-Bright
+colorscheme space-vim-dark
 
 " Protobuf highlighting
 augroup filetype
