@@ -3,7 +3,7 @@
     name = Abhishek Das
 [core]
     editor = vim
-	quotepath = false
+    quotepath = false
 [push]
     default = matching
 [alias]
