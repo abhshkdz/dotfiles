@@ -12,7 +12,7 @@
 	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "vim/.vim/bundle/protobuf"]
 	path = vim/.vim/bundle/protobuf
-	url = git://github.com/uarun/vim-protobuf.git
+	url = https://github.com/uarun/vim-protobuf.git
 [submodule "vim/.vim/bundle/torch-snipmate"]
 	path = vim/.vim/bundle/torch-snipmate
 	url = https://github.com/jakezhaojb/vim-torch-snipmate.git
@@ -33,7 +33,7 @@
 	url = https://github.com/gpakosz/.tmux.git
 [submodule "vim/.vim/bundle/vimtex"]
 	path = vim/.vim/bundle/vimtex
-	url = git@github.com:lervag/vimtex.git
+	url = https://github.com/lervag/vimtex.git
 [submodule "vim/.vim/bundle/nerdcommenter"]
 	path = vim/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
