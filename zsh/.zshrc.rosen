@@ -5,7 +5,7 @@ export ZSH=/home/abhshkdz/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="nebirhos"
+ZSH_THEME="wedisagree"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -92,7 +92,7 @@ export CAFFE=/home/abhshkdz/caffe
 export PYTHONPATH=/home/abhshkdz/caffe/python:$PYTHONPATH
 
 # CUDA
-export PATH=/usr/local/cuda-7.5/bin:$PATH
+export PATH=/usr/local/cuda-8.0/bin:$PATH
 # export PATH=/home/abhshkdz/cuda/lib64/:$PATH
 
 export PATH="$PATH:/srv/share/gpu_lock"
@@ -108,12 +108,12 @@ export PATH="/home/abhshkdz/local/bin:/home/abhshkdz/local/lib:$PATH"
 # tensorflow
 # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/home/abhshkdz/cuda/lib64"
 # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/abhshkdz/cuda/lib64"
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-7.5/lib64:/home/abhshkdz/cuda/lib64"
-export CUDA_HOME=/usr/local/cuda-7.5
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64:/home/abhshkdz/cuda/lib64"
+export CUDA_HOME=/usr/local/cuda-8.0
 # export CUDA_HOME=/home/abhshkdz/cuda/lib64
 
 # bazel
-export JAVA_HOME="/usr/lib/jvm/java"
+export JAVA_HOME="/usr/"
 
 # nltk
 export NLTK_DATA=/home/abhshkdz/nltk_data
@@ -127,3 +127,10 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # SCM breeze
 [ -s "/home/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/home/abhshkdz/.scm_breeze/scm_breeze.sh"
 
+# Go path
+export GOPATH=$HOME/gopath
+export PATH=$PATH:/usr/local/go/bin:/home/abhshkdz/gopath/bin
+
+# Slurm
+export SQUEUE_FORMAT='%.12i %.9P %.18j %.9u %.14b %.14B %.2t %.20S %.12M'
+export SQUEUE_SORT='P,B,-t,-S'
