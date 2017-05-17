@@ -107,3 +107,6 @@ tmux_conf_new_session_prompt=false
 # this is the place to further customize tmux's configuration
 
 #set -g history-limit 10000
+
+# aggressive window resizing
+set-window-option -g aggressive-resize
