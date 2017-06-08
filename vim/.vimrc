@@ -58,3 +58,7 @@ map <leader>p :cp<cr>
 
 " Updatetime
 set updatetime=250
+
+" Highlight 80 chars in red
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
