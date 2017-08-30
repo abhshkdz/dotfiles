@@ -90,10 +90,10 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [ -s "/Users/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/Users/abhshkdz/.scm_breeze/scm_breeze.sh"
 
 # Anaconda
-export PATH=/Users/abhshkdz/softwares/anaconda2/bin:$PATH
+export PATH=/Users/abhshkdz/softwares/anaconda3/bin:$PATH
 
 # Torch
-. /Users/abhshkdz/softwares/torch/install/bin/torch-activate
+. /Users/abhshkdz/softwares/torch-without-luajit/install/bin/torch-activate
 
 # TeX
 export PATH=/Library/TeX/texbin/:$PATH
