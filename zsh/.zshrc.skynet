@@ -85,14 +85,17 @@ alias ls="ls --color -hp"
 
 # added by Anaconda 2.3.0 installer
 export PATH="/nethome/adas81/software/anaconda3/bin:$PATH"
-export PATH="/srv/share/abhshkdz/local/:$PATH"
+
+# local binaries
+export PATH="/srv/share/abhshkdz/local/bin:/srv/share/abhshkdz/local/lib:$PATH"
+export PKG_CONFIG_PATH="/srv/share/abhshkdz/local/lib/pkgconfig"
 
 # autojump
 [[ -s /nethome/adas81/.autojump/etc/profile.d/autojump.sh ]] && source /nethome/adas81/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
 # cuda / cudnn
-export LD_LIBRARY_PATH="/usr/local/cuda-8.0/lib64:/srv/share/abhshkdz/local/lib64"
+export LD_LIBRARY_PATH="/usr/local/cuda-8.0/lib64:/srv/share/abhshkdz/local/lib64:/srv/share/abhshkdz/local/lib"
 export CUDNN_PATH="/nethome/adas81/downloads/cuda/lib64/libcudnn.so.5"
 export CUDA_HOME=/usr/local/cuda-8.0
 export PATH=/usr/local/cuda-8.0/bin:$PATH
@@ -114,5 +117,5 @@ export GOPATH=$HOME/gopath
 export PATH=$PATH:/usr/local/go/bin:/nethome/adas81/gopath/bin
 
 # Slurm
-export SQUEUE_FORMAT='%.12i %.9P %.18j %.9u %.14b %.14B %.2t %.20S %.12M'
+export SQUEUE_FORMAT='%.12i %.9P %.18j %.9u %.14b %.14B %.14N %.2t %.20S %.12M'
 export SQUEUE_SORT='P,B,-t,-S'
