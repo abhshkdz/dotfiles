@@ -109,3 +109,6 @@ alias matlab='/Applications/MATLAB_R2016a.app/bin/matlab -nodesktop'
 # Go
 export PATH="$PATH:/usr/local/go/bin:/Users/abhshkdz/Downloads/gocode/bin"
 export GOPATH="/Users/abhshkdz/Downloads/gocode"
+
+# Syntax highlighting
+source /Users/abhshkdz/projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
