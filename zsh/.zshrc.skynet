@@ -82,6 +82,7 @@ export LANG=en_US.UTF-8
 
 alias tmux="TERM=screen-256color-bce tmux"
 alias ls="ls --color -hp"
+alias sq="squeue"
 
 # added by Anaconda 2.3.0 installer
 export PATH="/nethome/adas81/software/anaconda3/bin:$PATH"
@@ -119,3 +120,15 @@ export PATH=$PATH:/usr/local/go/bin:/nethome/adas81/gopath/bin
 # Slurm
 export SQUEUE_FORMAT='%.12i %.9P %.18j %.9u %.14b %.14B %.14N %.2t %.20S %.12M'
 export SQUEUE_SORT='P,B,-t,-S'
+
+# NIPS18 House3D
+# no lighting
+# export PYTHONPATH="/nethome/adas81/projects/embodied-qa-modular/House3D"
+# lighting
+# export PYTHONPATH="/nethome/adas81/projects/embodied-qa-modular/House3D_bkp"
+
+# CVPR18 House3D
+# lighting
+export PYTHONPATH="/nethome/adas81/projects/embodied-qa/House3D"
+
+source /nethome/adas81/projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
