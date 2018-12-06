@@ -66,3 +66,6 @@ match OverLength /\%81v.\+/
 
 " shortcut for navigating through tags
 nnoremap <leader>. :CtrlPTag<cr>
+
+" tagbar
+nmap <leader>t :TagbarToggle<CR>
