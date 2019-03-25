@@ -92,6 +92,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [ -s "/Users/abhshkdz/.scm_breeze/scm_breeze.sh" ] && source "/Users/abhshkdz/.scm_breeze/scm_breeze.sh"
 
 # Anaconda
+# export PATH=/Users/abhshkdz/softwares/anaconda2/bin:$PATH
 export PATH=/Users/abhshkdz/softwares/anaconda3/bin:$PATH
 
 # Torch
@@ -112,3 +113,9 @@ export GOPATH="/Users/abhshkdz/Downloads/gocode"
 
 # Syntax highlighting
 source /Users/abhshkdz/projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# VS Code
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# House3D
+export PYTHONPATH="/Users/abhshkdz/projects/House3D"
