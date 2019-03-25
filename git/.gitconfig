@@ -14,3 +14,7 @@
 [color]
     diff = always
     branch = always
+[github]
+	user = abhshkdz
+[ghi]
+	token = !security find-internet-password -a abhshkdz -s github.com -l 'ghi token' -w
