@@ -1,4 +1,27 @@
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-fugitive'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'flazz/vim-colorschemes'
+Plug 'uarun/vim-protobuf'
+Plug 'jakezhaojb/vim-torch-snipmate'
+Plug 'tomtom/tlib_vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'garbas/vim-snipmate'
+Plug 'gpakosz/.tmux'
+Plug 'lervag/vimtex'
+Plug 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'dracula/vim'
+Plug 'wakatime/vim-wakatime'
+Plug 'majutsushi/tagbar'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+call plug#end()
+
 syntax on
 filetype plugin indent on
 
