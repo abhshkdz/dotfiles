@@ -19,7 +19,7 @@ Plug 'wakatime/vim-wakatime'
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'joshdick/onedark.vim'
+Plug 'rakr/vim-one'
 
 call plug#end()
 
@@ -28,7 +28,7 @@ filetype plugin indent on
 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 fileformat=unix
 set number incsearch hlsearch ruler
-colorscheme onedark
+colorscheme one
 
 " Protobuf highlighting
 augroup filetype
@@ -120,3 +120,5 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
+
+set background=dark
