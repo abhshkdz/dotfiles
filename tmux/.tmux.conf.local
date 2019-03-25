@@ -110,3 +110,6 @@ tmux_conf_new_session_prompt=false
 
 # aggressive window resizing
 set-window-option -g aggressive-resize
+
+set -g default-terminal "tmux-256color"
+set -ga terminal-overrides ",*256col*:Tc"

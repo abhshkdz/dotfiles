@@ -5,7 +5,7 @@ filetype plugin indent on
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 fileformat=unix
 set number incsearch hlsearch ruler
 " colorscheme space-vim-dark
-colorscheme dracula
+colorscheme Monokai
 
 " Protobuf highlighting
 augroup filetype
@@ -63,6 +63,7 @@ set updatetime=250
 " Highlight 80 chars in red
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
+set colorcolumn=80
 
 " shortcut for navigating through tags
 nnoremap <leader>. :CtrlPTag<cr>
@@ -89,3 +90,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" True colors
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
