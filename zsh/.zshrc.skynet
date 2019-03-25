@@ -85,7 +85,8 @@ alias ls="ls --color -hp"
 alias sq="squeue"
 
 # added by Anaconda 2.3.0 installer
-export PATH="/nethome/adas81/software/anaconda3/bin:$PATH"
+# export PATH="/nethome/adas81/software/anaconda3/bin:$PATH"
+export PATH="/srv/share2/abhshkdz/local/anaconda3/bin:$PATH"
 
 # local binaries
 export PATH="/srv/share/abhshkdz/local/bin:/srv/share/abhshkdz/local/lib:$PATH"
@@ -96,10 +97,13 @@ export PKG_CONFIG_PATH="/srv/share/abhshkdz/local/lib/pkgconfig"
 autoload -U compinit && compinit -u
 
 # cuda / cudnn
-export LD_LIBRARY_PATH="/usr/local/cuda-8.0/lib64:/srv/share/abhshkdz/local/lib64:/srv/share/abhshkdz/local/lib"
-export CUDNN_PATH="/nethome/adas81/downloads/cuda/lib64/libcudnn.so.5"
-export CUDA_HOME=/usr/local/cuda-8.0
-export PATH=/usr/local/cuda-8.0/bin:$PATH
+# export LD_LIBRARY_PATH="/usr/local/cuda-9.1/lib64:/srv/share/abhshkdz/local/lib64:/srv/share/abhshkdz/local/lib"
+# export CUDNN_PATH="/srv/share/abhshkdz/downloads/cuda"
+# export CUDA_HOME="/usr/local/cuda-9.1"
+# export PATH=/usr/local/cuda-9.1/bin:$PATH
+export LD_LIBRARY_PATH="/srv/share2/abhshkdz/local/cuda/lib64:/srv/share/abhshkdz/local/lib64:/srv/share/abhshkdz/local/lib:/srv/share/abhshkdz/local/include"
+export CUDA_HOME="/srv/share2/abhshkdz/local/cuda-10.0"
+export PATH="/srv/share2/abhshkdz/local/cuda/bin:$PATH"
 
 # nltk
 export NLTK_DATA=/nethome/adas81/nltk_data
@@ -129,6 +133,32 @@ export SQUEUE_SORT='P,B,-t,-S'
 
 # CVPR18 House3D
 # lighting
-export PYTHONPATH="/nethome/adas81/projects/embodied-qa/House3D"
+# export PYTHONPATH="/nethome/adas81/projects/embodied-qa/House3D"
+
+# F2018 Dev House3D
+# export PYTHONPATH="/nethome/adas81/projects/embodied-qa-release/House3D"
+
+# S2019 EQA unbias House3D
+export PYTHONPATH="/nethome/adas81/projects/eqa-unbias/House3D"
 
 source /nethome/adas81/projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# nvm + nodejs
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pyenv
+# export PATH="/nethome/adas81/.pyenv/bin:$PATH"
+# export WORKON_HOME="/srv/share/abhshkdz/envs"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+
+# habitat
+export PYTHONPATH="${PYTHONPATH}:/srv/share2/abhshkdz/projects/habitat-sim/:/coc/pskynet2/abhshkdz/projects/habitat-sim/build/esp/bindings"
+
+# dopamine
+export PYTHONPATH="${PYTHONPATH}:/srv/share2/abhshkdz/projects/dopamine"
+
+# caffe
+export PYTHONPATH="${PYTHONPATH}:/srv/share2/abhshkdz/projects/bottom-up-attention/caffe"
