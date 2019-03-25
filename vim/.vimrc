@@ -19,6 +19,7 @@ Plug 'wakatime/vim-wakatime'
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
@@ -27,8 +28,7 @@ filetype plugin indent on
 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 fileformat=unix
 set number incsearch hlsearch ruler
-" colorscheme space-vim-dark
-colorscheme Monokai
+colorscheme onedark
 
 " Protobuf highlighting
 augroup filetype
